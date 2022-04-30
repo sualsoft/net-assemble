@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+
+  <body>
+    <!-- ======= Header ======= -->
+    {{ partial "header.html" . }}
+    <!-- End Header -->
+
+    <main id="main">
+      <!-- ======= Contact Section ======= -->
+      <section class="contact mt-5">
+        <div class="container mt-5" data-aos="fade-up">
+          <div class="row gy-4 justify-content-center mt-5">
+            <div class="col-md-9">
+              <form action="" method="post" class="php-email-form">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      name="first-name"
+                      class="form-control"
+                      placeholder="First Name"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      name="last-name"
+                      class="form-control"
+                      placeholder="Last Name"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="phone"
+                      placeholder="Phone"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="6"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="col-md-12 text-start">
+                    <button type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+    {{ partial "footer.html" . }}
+    <!-- ======= Footer ======= -->
+
+    <!-- End Footer -->
+    {{ partial "scripts.html" . }}
+  </body>
+</html>
